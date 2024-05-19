@@ -5,7 +5,9 @@ import Home from "./home/Home";
 import About from "./about/About";
 import Portfolio from "./portfolio/Portfolio";
 import {Route, Routes} from "react-router-dom";
-import {Box, Grid} from "@mui/material";
+import {Box, Grid, Typography} from "@mui/material"; // Importing Typography here
+
+
 
 export default function BaseLayout() {
    let [darkMode, setDarkMode] = useState(false);
@@ -42,11 +44,15 @@ export default function BaseLayout() {
                </Routes>
             </Grid>
             <Grid item>
-               <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
-                    py={'1.5rem'} sx={{opacity: 0.7}} width={'100%'}>
-                  <p>template created with &hearts; by Sandhya Haravara</p>
-                  <p>&copy; 2023</p>
-               </Box>
+            <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
+    py={'1.5rem'} sx={{opacity: 0.7}} width={'100%'}>
+  <Typography fontWeight="bold">
+    template created with &hearts; by Sandhya Haravara
+  </Typography>
+  <Typography fontWeight="bold">
+    &copy; 2024
+  </Typography>
+</Box>
             </Grid>
          </Grid>
       </Box>
