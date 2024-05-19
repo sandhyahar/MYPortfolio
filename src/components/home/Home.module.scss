@@ -6,6 +6,7 @@ h1 {
   @media only screen and (min-width: 940px) {
     font-size: 3rem;
     text-align: left;
+    
   }
 }
 
@@ -25,6 +26,7 @@ h2 {
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
+  
 }
 
 a {
@@ -47,3 +49,5 @@ a:hover {
   60% { transform: rotate( 0.0deg) }
   100% { transform: rotate( 0.0deg) }
 }
+
+

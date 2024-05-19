@@ -10,7 +10,7 @@ export default function About() {
 
     function aboutMeText() {
         return <>
-            <p><span style={{color: info.baseColor}}>About Me</span></p>
+            <p><span style={{color: info.baseColor}} >About Me</span></p>
             <p><span style={{color: info.baseColor}}>Hello there!  I'm {firstName}<span
                 className={Style.green}></span></span>
                 {info.bio}
